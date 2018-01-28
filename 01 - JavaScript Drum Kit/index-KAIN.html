@@ -56,7 +56,32 @@
 <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+let divs = document.querySelector('.keys')
+window.addEventListener('keydown',handleKeydown);
+window.addEventListener('keyup',handleKeyup);
 
+let keyCode
+
+function handleKeydown(e) {
+    keyCode = e.keyCode
+    let keyDiv = divs.querySelector(`div[data-key='${keyCode}']`)
+    let keyAudio = document.querySelector(`audio[data-key='${keyCode}']`)
+//  console.log(keyDiv)
+//  console.log(keyAudio)
+    if(keyCode && keyAudio) {
+        keyDiv.classList.add('playing')
+        keyAudio.currentTime = 0;
+        keyAudio.play();
+    }
+}
+
+function handleKeyup(e) {
+  let code = e.keyCode
+  // console.log('键盘弹起来了')
+  let keyDiv = divs.querySelector(`div[data-key='${code}']`)
+  keyDiv.classList.remove('playing')
+  keyCode = undefined
+}
 </script>
 
 </body>

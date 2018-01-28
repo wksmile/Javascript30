@@ -6,8 +6,9 @@
 这是我基于[未枝丫](https://github.com/soyaine)的写的中文文档，在此基础上自己实现的，每一个demo我自己的实现是index-KAIN.html
 
 > Repo by: [kain](https://github.com/wksmile)  
-> [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)    
-> 完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
+> [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)
+
+我的所有挑战演示请转到[http://localhost:3000/posts/](http://localhost:3000/posts/)下查看,在每一个demo下面都有对应挑战的链接
 
 ## JavaScript30 是什么？
 
@@ -23,10 +24,6 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 
 当然不可否认的是，新的工具可以帮助我们提高生产率，但最原始的 JavaScript 想必是很多人的知识结构里所缺失的部分，如果你也想探探究竟，欢迎跟着这份指南，一起逛逛 JavaScript 的原始世界。
 
-写这份中文指南的另一个原因是看了 Nitish Dayal 写的 Guides，我决定效仿他，在记录笔记的同时梳理思路，整理形成指南。我相信 Learn by Use 的同时也深信教是最好的学。希望这份指南能够帮助到想要进行练习的人们，特别是那些想要入门的前端小白们。
-
-目前这份指南还在更新之中，欢迎监督我，如果你想要及时获取新的文章，可以[在 GitHub Star/Fork 我的 Repo](https://github.com/soyaine/JavaScript30)。
-
 ## 如何参加挑战
 
 下面是完成 Wes Bos 的 JavaScript30 挑战所能借鉴的文档，每个文档的具体使用建议如下：
@@ -36,5 +33,5 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 - [挑战初始文档](https://github.com/wesbos/JavaScript30)：这是 Wes Bos 这份教程涉及的代码，你可以直接 Clone 或者下载到本地，然后开始你 30 天的挑战之旅。文档共有 30 个文件夹，每个文件夹中至少有两个文件。
 	- **index-START.html**：是提供给我们的初始文档，方便我们专注于 JavaScript 的编写，这个文档已经将基础的 HTML 和 CSS 部分写好，我们只需要在这个基础上编写 JavaScript 代码，实现特定的功能即可。
 	- **index-FINISHED.html**：已经实现了最终效果的文档，可以查看效果和实现思路。
-- [我写的中文指南源码](https://github.com/soyaine/JavaScript30)：文档结构和 Wes Bos 提供的相同，进入每个文件夹都可查看当前挑战的指南（README.md），我完成挑战时建立的文件是 **index-SOYAINE.html**，里面有核心代码的中文注释。如果阅读过程中发现问题，请[在这里提 issue](https://github.com/soyaine/JavaScript30/issues)。  如果喜欢记得 Star 哟~♪(^∇^*)，鼓励我写出更好的文章。
+- [我写的中文指南源码](https://github.com/wksmile/Javascript30)：文档结构和 Wes Bos 提供的相同，进入每个文件夹都可查看当前挑战的指南（README.md），我完成挑战时建立的文件是 **index-KAIN.html**，里面有核心代码的中文注释。如果阅读过程中发现问题，请[在这里提 issue](https://github.com/wksmile/Javascript30/issues)。
 
