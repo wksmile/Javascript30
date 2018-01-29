@@ -9,7 +9,7 @@
 
 文档中已经给出了 HTML 结构，表盘内有三个 `div` 对应三个指针。只需要添加一些 CSS 效果，然后用 JavaScript 动态更新指针的状态即可。
 
-[看在线效果](http://localhost:3000/demo-js30-02/)
+[看在线效果](http://kain.site/demo-js30-02/)
 
 ## 关键要点
 
@@ -69,7 +69,7 @@
 	
 	这里有一个小细节，指针旋转轴与表盘中心并不重合。解决办法是将指针设置为垂直居中，我采用的办法是给指针设置 `margin-top: -height/2` ，由于每个指针高度不同，所以需要给每个指针指定。
 	
-5. 设置指针为从中心点出发有道细得到样式，可以用border实现,实现可以参考[这个博客](http://caibaojian.com/css-border-triangle.html),参考里面的三角形实现，把三角形拉长就是我们要的指针样式了。
+5. 设置指针为从中心点出发由粗到细样式，可以用border实现,实现可以参考[这个博客](http://caibaojian.com/css-border-triangle.html),参考里面的三角形实现，把三角形拉长就是我们要的指针样式了。
 
     ```
         .hour-hand {
