@@ -1,13 +1,12 @@
 # 05 Flex 实现可伸缩的图片墙 中文指南
+  
+> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 5 篇。
 
-> 作者：©[未枝丫](https://github.com/soyaine)   
-> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 5 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
+[在线演示](http://kain.site/demo-js30-05/)
 
 ## 实现效果
 
-![可伸缩的图片墙演示](https://cl.ly/1X1A320o0x1T/Screen%20recording%202016-12-31%20at%2010.06.10%20AM.gif)
-
-点击任意一张图片，图片展开，同时从图片上下两方分别移入文字。点击已经展开的图片后，图片被压缩，同时该图片上下两端的文字被挤走。若图片加载不出来，[请点链接看更完整的演示图片](https://d17oy1vhnax1f7.cloudfront.net/items/3J2r2G0p0C0h0q2c3R3p/Screen%20recording%202016-12-30%20at%2005.33.01%20PM.gif)，在线效果[请点这里。](http://soyaine.cn/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index-SOYAINE2.html)
+点击任意一张图片，图片展开，同时从图片上下两方分别移入文字。点击已经展开的图片后，图片被压缩，同时该图片上下两端的文字被挤走。若图片加载不出来，
 
 初始文档的 DOM 结构：以 `.panels` 为父 `div` 之下，有 5 个类名为 `.panel` 的 `div`，这 5 个各含有 3 个子 `p` 标签。而相应的 CSS 样式中，动画时间等特性已经设定好，只需要完成不同状态下的页面布局以及事件监听即可。
 
