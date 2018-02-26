@@ -1,17 +1,12 @@
-# 06 Fetch 结合 filter 实现快速匹配古诗
-
-> 作者：©[未枝丫](https://github.com/soyaine)   
-> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 6 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
+# 06 Fetch 结合 filter 实现匹配地址名
+ 
+> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
 ## 实现效果
 
-![仿即时搜索诗句效果](https://cl.ly/0b360y270s0f/Screen%20recording%202016-12-31%20at%2010.05.23%20PM.gif)
-
-在输入框中输入一个词，迅速匹配，展示含有这个词的诗句，诗句的来源 json 数据是加载页面时从网络中异步获得。[在线效果请查看。](http://soyaine.cn/JavaScript30/06%20-%20Type%20Ahead/index-SOYAINE.html)
+在输入框中输入字母，迅速匹配，展示含有这个字母的地址
 
 初始文档中提供了 HTML 和 CSS，我们需要补全 JS 代码。这个挑战是 Ajax 的预热练习，在异步方面用到了一些目前还未被完全支持的新特性，但很好用。
-
-原文档中选的内容是英文城市名，我将其换成了唐诗，构造了一个含有 70 多首唐诗的 JSON 数据，访问地址是 [https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json](https://gist.githubusercontent.com/soyaine/81399bb2b24ca1bb5313e1985533c640/raw/bdf7df2cbcf70706c4a5e51a7dfb8c933ed78878/TangPoetry.json)，请自由取用。
 
 ## 涉及特性
 
@@ -133,9 +128,3 @@ arr1.push(...arr2);
 ### 正则表达式
 
 获取到了数据之后，如何匹配输入值呢？就要利用正则表达式了。正则表达式的 `match()` 可以执行一个匹配操作，我们再结合 `Array.filter()` 便能筛出整个数组中，满足条件的项，再经过字符串处理即可输出到页面。
-
-> 这篇我写了很久也写不满意，如果你能读到这里，说明你对实现的效果有兴趣，如果你觉得有什么地方我写得不清楚，或者我遗漏了什么，请告诉我。我一直在思考和调整，用什么样的方式去写会比较容易看懂，万分期待和感恩能有读者反馈 soyaine1@gmail。    
-
-
-> 创建时间：2016-12-31     
-> 最后更新：2017-01-03
