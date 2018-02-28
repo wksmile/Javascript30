@@ -1,13 +1,10 @@
 # 08 HTML5 Canvas 实现彩虹画笔绘画板指南
-
-> 作者：©[未枝丫](https://github.com/soyaine)  
-> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 8 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
+ 
+> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
 ## 实现效果
 
-![HTML5 Canvas 画板效果](https://cl.ly/412q1g0u3N31/Screen%20recording%202017-01-04%20at%2007.38.05%20PM.gif)
-
-用 HTML5 中的 Canvas 的路径绘制实现一个绘画板，可供鼠标画画，颜色呈彩虹色渐变，画笔大小同样呈渐变效果。这部分不涉及 CSS 内容，全部由 JS 来实现。[在线体验请看这个链接](http://soyaine.cn/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index-SOYAINE.html)。
+用 HTML5 中的 Canvas 的路径绘制实现一个绘画板，可供鼠标画画，颜色呈彩虹色渐变，画笔大小同样呈渐变效果。这部分不涉及 CSS 内容，全部由 JS 来实现。[在线体验请看这个链接]()。
 
 ## 涉及特性
 
@@ -60,7 +57,7 @@ var ctx = canvas.getContext('2d');
 对于这个用于渲染的 ctx（请自动替换成上下文这个别扭的词），有一些基本样式属性可供修改，类似于配置你的调色盘：
 
 - `lineCap`：笔触的形状，有 round | butt | square 圆、平、方三种。
-- `lineJoin`：线条相较的方式，有 round | bevel | miter 圆交、斜交、斜接三种。
+- `lineJoin`：线条相交的方式，有 round | bevel | miter 圆交、斜交、斜接三种。
 - `lineWidth`：线条的宽度
 - `strokeStyle`：线条描边的颜色
 - `fillStyle`：填充的颜色
@@ -207,5 +204,3 @@ if(e.type == "mousemove"){
 ```
 
 这样一来，你在手机 Chrome 上也可以试一试这个网页绘图板的效果。
-
-**至此，挑战 08 就完成啦，棒棒哒！**
