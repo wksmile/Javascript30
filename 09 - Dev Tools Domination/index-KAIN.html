@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Console Tricks!</title>
+</head>
+<body>
+
+<p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+<script>
+  const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+  function makeGreen() {
+    const p = document.querySelector('p');
+    p.style.color = '#BADA55';
+    p.style.fontSize = '50px';
+  }
+
+  // Regular
+  console.log("平凡的行动注定平凡")
+
+  // Interpolated
+  console.log("我是一个整数%d",2.478)
+  console.log("我是一个浮点数%f",2.478)
+  console.log("我是一个对象%o",{"k":"jj","ty":"sd"})
+  console.log("我是一个字符串%s","hahahaha")
+
+  // Styled
+  console.log("%c我会变小变大变漂亮哦","color:#78df09;font-size:2em;font-style: italic;")
+
+  // warning!
+  console.warn("小心啊！")
+
+  // Error :|
+  console.error("怎么又犯错了，傻瓜！")
+
+  // Info
+  console.info("我都不知道说什么了！")
+
+  // Testing
+  console.assert(1===0,"我才不会等于1呢")
+  console.assert(1===1,"看来没有我输出的份了，真厉害")
+
+  // clearing  自己试吧
+  // console.clean()
+  // ctrl + L
+
+  // Viewing DOM Elements、
+  const p = document.querySelector("p")
+  console.log(p)
+  console.dir(p)
+
+  // Grouping together
+  dogs.forEach(dog=>{
+    console.group()
+    console.log(dog.name)
+    console.log(dog.age)
+    console.groupEnd()
+  })
+
+  // counting
+  console.count("kk输出了多少次")
+  console.count("kk输出了多少次")
+  console.count("nn输出了多少次")
+  console.count("nn输出了多少次")
+  console.count("nn输出了多少次")
+  console.count("nn输出了多少次")
+  console.count("nn输出了多少次")
+  console.count("nn输出了多少次")
+  console.count("kk输出了多少次")
+
+  // timing
+    console.time('count time')
+    for(let i=0;i<10000000;i++){}
+    console.timeEnd('count time')
+</script>
+</body>
+</html>

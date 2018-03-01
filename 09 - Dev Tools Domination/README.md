@@ -1,10 +1,6 @@
 # 09 Console 调试技巧指南
-
-> 作者：©[未枝丫](https://github.com/soyaine)  
-> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 9 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
-
-> 创建时间：2017-01-06    
-最后更新：2017-09-24
+ 
+> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
 ## 实现效果
 
@@ -118,8 +114,3 @@ fetch("https://api.github.com/users/soyaine")
 ````
 
 如果 timeEnd 中的名称如果和上面不一样，得到的数据是系统当前时间换算后的毫秒值。
-
-**~\(≧▽≦)/~调试技巧这部分就结束啦，拿起宝剑去开疆扩土吧~**
-
-## ChangeLog
-- 2017-09-24 fix typo [issue #29](https://github.com/soyaine/JavaScript30/issues/29)
