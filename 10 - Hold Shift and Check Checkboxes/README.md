@@ -1,16 +1,13 @@
 # 10 JS 实现 Checkbox 中按住 Shift 的多选功能
 
-> 作者：©[未枝丫](https://github.com/soyaine)  
-> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。现在你看到的是这系列指南的第 10 篇。完整指南在 [GitHub](https://github.com/soyaine/JavaScript30)，喜欢请 Star 哦♪(^∇^*)
+> 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
-> 创建时间：2017-01-07    
-最后更新：2017-01-07
 
 ## 实现效果
 
 ![shift 多选效果示例](https://cl.ly/3l2V0I2P0Q0x/Screen%20recording%202017-01-08%20at%2012.03.42%20AM.gif)
 
-初始文档中提供了一组 `checkbox` 类型的 `input` 元素，选中某个复选框时，其 `<p>` 标签中的文字会显示删除线。最终效果是，提供按下 Shift 键后进行多选操作的功能。 [在线体验请点这里](https://soyaine.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index-SOYAINE.html)。
+初始文档中提供了一组 `checkbox` 类型的 `input` 元素，选中某个复选框时，其 `<p>` 标签中的文字会显示删除线。最终效果是，提供按下 Shift 键后进行多选操作的功能。 [在线体验请点这里]()。
 
 ## 过程指南
 
@@ -128,5 +125,3 @@ function handleCheck1(e) {
 	lastChecked = this;
 }
 ```
-
-这样一来，挑战 10 就完！成！啦！恭喜走完了 1/3 的路程\(^o^)/~
