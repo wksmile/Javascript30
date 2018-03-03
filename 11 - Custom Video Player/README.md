@@ -3,6 +3,8 @@
   
 > 简介：[JavaScript30](https://javascript30.com) 是 [Wes Bos](https://github.com/wesbos) 推出的一个 30 天挑战。项目免费提供了 30 个视频教程、30 个挑战的起始文档和 30 个挑战解决方案源代码。目的是帮助人们用纯 JavaScript 来写东西，不借助框架和库，也不使用编译器和引用。
 
+[在线预览](http://kain.site/demo-js30-11/)
+
 ## 实现目标
 * 为 `video` 元素添加自定义样式的播放控制面板
     * 可滑动调节音量、播放速度
