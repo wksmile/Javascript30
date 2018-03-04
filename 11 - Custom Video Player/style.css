@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 *, *:before, *:after {
@@ -8,6 +10,7 @@ html {
 
 body {
   padding: 0;
+  margin: 0;
   display:flex;
   background:#7A419B;
   min-height:100vh;
@@ -18,12 +21,25 @@ body {
 }
 
 .player {
-  max-width:750px;
-  border:5px solid rgba(0,0,0,0.2);
+  width:70%;
+  border:0px solid rgba(0,0,0,0.2);
   box-shadow:0 0 20px rgba(0,0,0,0.2);
   position: relative;
   font-size: 0;
   overflow: hidden;
+}
+
+.fullScreen {
+  position:absolute;
+  z-index: 10;
+  right: 8px;
+  top:8px;
+  width: 0;
+  transition: width .2s linear;
+}
+
+.player:hover .fullScreen {
+  width: 20px;
 }
 
 .player__video {
