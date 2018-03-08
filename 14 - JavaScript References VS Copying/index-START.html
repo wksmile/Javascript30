@@ -13,10 +13,13 @@
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // 现在我们想要复制它
+    const copyPlayer = players;
 
     // 也许你觉得可以直接这样修改复制后的数组:
+    copyPlayer[0] = 'kain';
 
     // 但我们修改这个数组的时候会发生什么呢？
+    console.log(players,copyPlayer);
 
     // 这就是问题所在
 
@@ -27,22 +30,49 @@
     // 所以如何解决这个问题？下面来进行真正的复制吧。
 
     // one day
+    const copyPlayerI = Array.from(players);
+
+    // slice复制数组
+    const copyPlayer0 = players.slice(0);
 
     // 或者创建一个新数组，然后用 concat 方法来获取它
+    const copyPlayer1 = [].concat(players);
 
     // 再或者用 ES6 里面的扩展语法
+    const copyPlayer2 = [...players];
 
     // 现在再修改 team5，原数组不会变了
+    copyPlayer0[0] = 'kain0';
+    copyPlayer1[0] = 'kain1';
+    copyPlayer2[0] = 'kain2';
+    copyPlayerI[0] = 'kainI';
+    console.log(copyPlayer0,copyPlayer1,copyPlayer2,copyPlayerI);
 
     // 对 Object 类型的数据来说也是一样的，我们用一个 person 例子来说明
+    const wes = {
+      name: 'Wes',
+      age: 100,
+      social: {
+        twitter: '@wesbos',
+        facebook: 'wesbos.developer'
+      }
+    };
 
     // 现在又一个 Object 对象
 
     // 然后以为这样可以复制它:
+    const wes1 = wes;
 
     // 到底要怎样才能真正得到它的复制版呢？
+    wes1['name'] = 'kk';
+    console.log(wes,wes1);
 
     // 我们满怀期望的希望扩展语法对它也会生效
+    const copyWeb0 = Object.assign({},wes);
+    const copyWeb1 = JSON.parse(JSON.stringify(wes));
+    copyWeb0['name'] = 'kk0';
+    copyWeb1['name'] = 'kk1';
+    console.log(wes,copyWeb0,copyWeb1);
 
     // 需要注意的是：这里的例子里面，我们用的数组和对象都只是一层嵌套，Lodash 有一个深度复制的方法，但你使用之前需要多考虑一下。
 
