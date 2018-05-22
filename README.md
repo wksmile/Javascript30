@@ -8,7 +8,7 @@
 > Repo by: [kain](https://github.com/wksmile)  
 > [JavaScript30](https://javascript30.com) 教程作者：[Wes Bos](https://github.com/wesbos)
 
-我的所有挑战演示请转到[http://localhost:3000/posts/](http://localhost:3000/posts/)下查看,在每一个demo下面都有对应挑战的链接
+我的所有挑战演示请转到[http://kain.site/posts/](http://kain.site/posts/)下查看,在每一个demo下面都有对应挑战的链接
 
 ## JavaScript30 是什么？
 
