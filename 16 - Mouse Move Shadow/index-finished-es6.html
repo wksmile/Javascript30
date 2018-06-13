@@ -43,10 +43,14 @@
 
   function shadowMove(e) {
     //解构赋值
+    // offsetWidth = border  + 元素内容宽度 + padding
     const { offsetWidth: width, offsetHeight: height } = hero;
+    // 鼠标相对于事件源元素（srcElement）的X,Y坐标，只有IE事件有这2个属性，标准事件没有对应的属性。
     let { offsetX: x, offsetY: y } = e;
     
-    //将鼠标位置转换为相对视口左上角的坐标，本例中由于hero元素占满视口故未起实际作用
+    // 将鼠标位置转换为相对视口左上角的坐标，本例中由于hero元素占满视口故未起实际作用
+    // HTMLElement.offsetLeft 是一个只读属性，返回当前元素左上角相对于  HTMLElement.offsetParent 节点的左边界偏移的像素值。
+    // this和event.target的区别：js中事件是会冒泡的，所以this是可以变化的，但event.target不会变化，它永远是直接接受事件的目标DOM元素；.this和event.target都是dom对象
     if (this !== e.target) {
       x = x + e.target.offsetLeft;
       y = y + e.target.offsetTop;
