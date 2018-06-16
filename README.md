@@ -35,3 +35,5 @@ JavaScirpt30 是 Wes Bos 推出的一个 30 天挑战。项目免费提供了 30
 	- **index-FINISHED.html**：已经实现了最终效果的文档，可以查看效果和实现思路。
 - [我写的中文指南源码](https://github.com/wksmile/Javascript30)：文档结构和 Wes Bos 提供的相同，进入每个文件夹都可查看当前挑战的指南（README.md），我完成挑战时建立的文件是 **index-KAIN.html**，里面有核心代码的中文注释。如果阅读过程中发现问题，请[在这里提 issue](https://github.com/wksmile/Javascript30/issues)。
 
+
+学习进度：19
