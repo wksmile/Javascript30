@@ -32,9 +32,9 @@ var speech = new webkitSpeechRecognition();
 ```js
   speech.interimResults = true;
   //返回即时语音，即时语音是指SpeechRecognitionResult.isFinal 为false时捕获到的信息。
-  speech.lang = 'en-US';//设置语音识别类别为英语
-  speech.start();//开启功能
-```   
+  speech.lang = 'en-US';         //设置语音识别类别为英语
+  speech.start();                //开启功能
+```
 3.监听收到结果事件，将语音识别结果输出在DOM元素上。   
 ```js
   speech.addEventListener('result', (e) => {
