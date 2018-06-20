@@ -82,6 +82,7 @@ stopButton.addEventListener('click', stopSpeak);
 //index-start.html中提供的选择器将返回rate值,pitch值以及阅读内容对应的DOM元素
   const options = document.querySelectorAll('[type="range"], [name="text"]');
 //将阅读参数赋值至msg的同名实例属性
+
 function paramChange(){
   msg[this.name] = this.value;
 }
