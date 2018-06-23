@@ -19,7 +19,7 @@
 ## 过程指南    
 > html页面中在导航栏提供了LOGO标签，初始最大宽度被设置为0而隐藏，固定导航栏时可同时修改LOGO标签的max-width属性，将其显示出来   
 
-1.获取导航栏相对于整个文档的位置，将其记录为切换点   
+1.获取导航栏相对于整个文档的位置，将其记录为切换点
 ```js
   var oNav = document.getElementById('main');
   var changePoint = oNav.offsetTop;
